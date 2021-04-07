@@ -18,14 +18,14 @@
     <input name="datetime" type="text" class="form-control" placeholder="Введите дату и время" value="<%= @datetime %>">
   </div>
 
-  <div class="form-group">
-    <label>Ваш парикмахер:</label>
-    <select name="barber" class="form-control">
-      <option>Jessie Pinkman</option>
-      <option>Walt White</option>
-      <option>Gus Fring</option>
-      <option>Michael Jekson</option>
-      <option>Cristiano Smitt</option>
+  <div class="form-group"> 
+    <label>Ваш парикмахер:</label> 
+    <select name="barber" class="form-control"> <option> 
+      <option <%= @barber == 'Jessie Pinkman'  ? 'selected' : '' %>>Jessie Pinkman</option>
+      <option <%= @barber == 'Walt White'      ? 'selected' : '' %>>Walt White</option>
+      <option <%= @barber == 'Gus Fring'       ? 'selected' : '' %>>Gus Fring</option>
+      <option <%= @barber == 'Michael Jekson'  ? 'selected' : '' %>>Michael Jekson</option>
+      <option <%= @barber == 'Cristiano Smitt' ? 'selected' : '' %>>Cristiano Smitt</option>
     </select>
   </div>
 
